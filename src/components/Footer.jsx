@@ -9,12 +9,11 @@ const Footer = () => {
           <div className="flex flex-wrap justify-between">
             <div className="w-full md:w-1/3 mb-6 md:mb-0">
               <div className="flex items-center mb-4">
-                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center text-white mr-2">
-                  NC
-                </div>
-                <span className="font-bold text-xl tracking-tight text-purple-600">
-                  NOVA COSPLAY
-                </span>
+                <img
+                  src="src\assets\images\Logo.png"
+                  alt="Logo Nova Cosplay"
+                  className="h-22 w-auto"
+                />
               </div>
               <p className="text-sm text-gray-600">
                 La comunidad de cosplay más grande de habla hispana. Conecta con

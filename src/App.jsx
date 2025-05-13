@@ -23,7 +23,7 @@ function App() {
         <div className="flex flex-col md:flex-row gap-6 mt-6">
           {/* Feed Principal */}
           <div className="w-full md:w-2/3">
-            <h2 className="text-xl font-bold mb-4 text-purple-600">
+            <h2 className="text-xl font-bold mb-4 text-[#C44E93]">
               EVENTOS DESTACADOS
             </h2>
             <EventFeed />
@@ -35,8 +35,13 @@ function App() {
           <Sidebar />
         </div>
 
-        <div className="w-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl py-6 px-6 mb-8 text-white font-extrabold text-xl text-center shadow-lg">
-          🎉 PRÓXIMO EVENTO ESPECIAL
+        <div className="w-full h-64 overflow-hidden rounded-xl mb-5">
+          <img
+            src="src\assets\images\Banner.jpg" // Reemplaza con la ruta correcta
+            alt="Gato astronauta"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: "center 15%" }} // Ajusta según la altura de los ojos
+          />
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6">

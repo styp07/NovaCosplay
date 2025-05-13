@@ -8,32 +8,22 @@ export default function EventSection() {
   const eventos = [
     {
       id: 1,
-      image: "https://picsum.photos/id/1011/800/400",
-      description: "¡No te pierdas el evento de cosplay del mes!",
+      image: "src\\assets\\images\\FeriaLibro.jpg",
+      description: "¡No te pierdas el evento de la Feria del libro!",
     },
     {
       id: 2,
-      image: "https://picsum.photos/id/1015/800/400",
-      description: "Competencia de trajes originales",
+      image: "src/assets/images/SOFA.webp",
+      description: "No te pierdas la convención SOFA",
     },
     {
       id: 3,
-      image: "https://picsum.photos/id/1025/800/400",
-      description: "Festival de anime y cultura pop",
-    },
-    {
-      id: 4,
-      image: "https://picsum.photos/id/1035/800/400",
-      description: "Show en vivo de artistas invitados",
-    },
-    {
-      id: 5,
-      image: "https://picsum.photos/id/1045/800/400",
-      description: "Premiación a los mejores cosplayers",
+      image: "src\\assets\\images\\ComicCon.jpg",
+      description: "Comicon Colombia 2025",
     },
   ];
 
-  const cardWidth = 600; // ancho fijo en px
+  const cardWidth = 770; // ancho fijo en px
 
   const scrollToIndex = (newIndex) => {
     const container = carouselRef.current;
@@ -60,7 +50,7 @@ export default function EventSection() {
       </button>
       <button
         onClick={() => scrollToIndex(index + 1)}
-        className="absolute right-2 top-[50%] -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hidden md:block"
+        className="absolute right-1 top-[50%] -translate-y-1/2 z-10 bg-white shadow rounded-full p-2 hidden md:block"
         disabled={index >= eventos.length - 1}
       >
         <ChevronRight />
@@ -72,7 +62,7 @@ export default function EventSection() {
           {eventos.map((evento) => (
             <div
               key={evento.id}
-              className="w-[600px] h-[350px] rounded-xl overflow-hidden relative flex-shrink-0 shadow-lg mx-2"
+              className="w-[750px] h-[400px] rounded-xl overflow-hidden relative flex-shrink-0 shadow-lg mx-2"
             >
               <img
                 src={evento.image}

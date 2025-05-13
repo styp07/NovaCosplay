@@ -4,24 +4,30 @@ const TopCosplayers = () => {
   const topCosplayers = [
     {
       id: 1,
-      name: "AnimeQueen",
-      avatar: "AQ",
-      character: "Sailor Moon",
+      name: "@PunkMacarroni",
+      image: "src\\assets\\images\\1.jpg",
+      character: "Sófora",
       likes: 3452,
     },
     {
       id: 2,
-      name: "HeroMaster",
-      avatar: "HM",
-      character: "Iron Man",
+      name: "@ChocotrainU",
+      image: "src\\assets\\images\\2.jpg",
+      character: "Nikke",
       likes: 3127,
     },
-    { id: 3, name: "CosplayPro", avatar: "CP", character: "Goku", likes: 2894 },
+    {
+      id: 3,
+      name: "@junko.sxn",
+      image: "src\\assets\\images\\3.jpg",
+      character: "Makima",
+      likes: 2894,
+    },
     {
       id: 4,
-      name: "CharacterArt",
-      avatar: "CA",
-      character: "Harley Quinn",
+      name: "@Mugilol",
+      image: "src\\assets\\images\\4.jpg",
+      character: "Rey Ayanami",
       likes: 2541,
     },
   ];
@@ -31,7 +37,6 @@ const TopCosplayers = () => {
       <div className="flex items-center justify-center mb-4">
         <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent flex-grow"></div>
         <div className="mx-4 text-xl font-bold text-purple-600 flex items-center">
-          <Trophy size={24} className="mr-2 text-yellow-500" />
           TOP COSPLAYERS SEMANAL
         </div>
         <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent flex-grow"></div>
@@ -57,7 +62,7 @@ const TopCosplayers = () => {
                   ? "bg-gray-400"
                   : index === 2
                   ? "bg-amber-700"
-                  : "bg-purple-500"
+                  : "bg-[#C44E93]"
               }`}
             >
               {index + 1}
@@ -65,9 +70,11 @@ const TopCosplayers = () => {
 
             {/* Image Placeholder */}
             <div className="aspect-square bg-gray-200 relative">
-              <div className="absolute inset-0 flex items-center justify-center text-2xl font-bold text-gray-400">
-                {cosplayer.avatar}
-              </div>
+              <img
+                src={cosplayer.image}
+                alt="Evento"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
 
             {/* Info */}
